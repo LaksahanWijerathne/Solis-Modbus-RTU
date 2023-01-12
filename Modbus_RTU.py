@@ -2,7 +2,6 @@
 ############################################################################
 #Communication with solis ongrid invertor v 0.00.02 ########################
 # mainly target for proper communication using Modbuss RTU #################
-#Owner:Gunda Power(Pvt) ltd.################################################
 #Author:Laksahan Wijerathna ################################################
 ############################################################################
 ############################################################################
@@ -125,6 +124,7 @@ def modbusRTUSend(Slave,Fun,RSAH,RSAL,RCH,RCL):
 count = 5
 i = 0
 while count >0:
+    ## This is command section That you can write your own command using this methodes
     time.sleep(5)
     #print("Start Sending: ",0x01,0x04, 0x0B, 0xBE, 0x00, 0x01)
     if i == 0:
